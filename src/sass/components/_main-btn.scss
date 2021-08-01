@@ -1,7 +1,7 @@
 .main-btn {
   font-family: $main-font;
   font-weight: $bolt-font-weight;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 40px;
   cursor: pointer;
 }
