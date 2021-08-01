@@ -1,0 +1,30 @@
+// media variables________________________________________________________________________________
+$breakpoints: (
+  'small': (min-width: 320px),
+  'small-landscape': (min-width: 481px),
+  'medium': (min-width: 993px),
+  'large': (min-width: 1200px),
+);
+
+//fonts-variables________________________________________________________________________________
+$main-font: 'Montserrat', sans-serif;
+$secondary-font: 'Lato', sans-serif;
+$bolt-font-weight: 700;
+
+// sizes-variables________________________________________________________________________________
+$min-width: 320px;
+$max-width: 1200px;
+
+//colors-variables________________________________________________________________________________
+$main-text-color: #FFFFFF;
+$seconadary-text-color: #323232;
+$theme-color: #8D81AC;
+$additional-text-color: #848E97;
+$revol-section-title-color: #635C73;
+$testimonials-section-footer-color: #A291A5;
+
+$header-menu-active-color: $theme-color;
+$btn-backgrround-color: $theme-color;
+
+
+//animation variables____________________________________________________________________________
