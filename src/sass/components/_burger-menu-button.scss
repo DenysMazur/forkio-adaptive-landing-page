@@ -1,0 +1,34 @@
+.hamburger-menu {
+  width: 26px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__line1, &__line2, &__line3 {
+  margin: 0 0 6px 0;
+  height: 1px;
+  border: 1px solid $main-text-color;
+  border-radius: 5px;
+  background-color: $main-text-color;
+  display: block;  
+  transition: all 0.3s ease-in-out;
+  }
+
+  &__line1 {
+    margin: 0 0 6px 11px;    
+    }
+
+  &.is-active &__line2{
+    opacity: 0;
+  }
+
+  &.is-active &__line1{
+    margin-left: 0px;
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  &.is-active &__line3{
+    transform: translateY(-6px) rotate(-45deg);
+  }
+}

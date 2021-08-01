@@ -4,6 +4,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
 
   &__navigation {
     background-color: $header-nav-background-color;
@@ -12,6 +13,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__logo-text {
@@ -52,7 +54,6 @@
   &__content {
     padding: 50px 0 416px;
     text-align: center;
-    font-family: $main-font;
   }
 
   &__content-title {
@@ -79,13 +80,36 @@
   &__main-btn {    
     font-size: 15px;
     line-height: 15px;
-    padding: 11px 24px;
+    padding: 10px 24px;
     color: $main-text-color;
     background-color: $theme-color;
 
+    &--abs {
+      font-size: 18px;
+      line-height: 20px;
+      padding: 12px 30px;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%)
+    }
+
     &:hover {
+      border-color: $theme-color;
       background-color: $main-text-color;
       color: $theme-color;
     }
+  }
+
+  &__menu-list {
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    top: 100%;
+  }
+
+  &__menu-list.header__menu-list--hidden {
+    display: none;
   }
 }

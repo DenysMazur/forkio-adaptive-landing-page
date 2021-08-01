@@ -1,0 +1,26 @@
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  color: $main-text-color;
+  font-size: 26px;
+  line-height: 26px;
+  background-color: $menu-background-color;
+
+  &__item {
+    border-bottom: 3px solid #3B3B3B;
+    padding: 29px 0 21px;
+  }
+
+  &__item-link {
+    text-decoration: none;
+    color: inherit;
+    border-left: 8px solid transparent;
+    padding-left: 29px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    &:hover {
+      color: $theme-color;
+      border-color: $theme-color;
+    }
+  }
+}
