@@ -1,13 +1,14 @@
-const menuBtn = document.querySelector('.hamburger-menu');
+document.addEventListener('click', (event) => {
+  const menuBtn = document.querySelector('.hamburger-menu');
 
-menuBtn.addEventListener('click', () => {
-  menuBtn.classList.toggle('is-active');
-  document.querySelector('.header__menu-list').classList.toggle('header__menu-list--hidden');
-})
-
-document.querySelector('.header__menu-list').addEventListener('click', (event) => {
-  if (event.target.classList.contains('menu-list__item-link')) {
+  if (event.target.classList.contains('hamburger-menu') || event.target.classList.contains('hamburger-menu-item')) {
     menuBtn.classList.toggle('is-active');
-    document.querySelector('.header__menu-list').classList.toggle('header__menu-list--hidden');    
+    document.querySelector('.header__menu-list').classList.toggle('header__menu-list--hidden');
+  } else if (event.target.classList.contains('menu-list__item') || event.target.classList.contains('menu-list')) {
+    return;
+  } else {
+    menuBtn.classList.remove('is-active');
+    document.querySelector('.header__menu-list').classList.add('header__menu-list--hidden');
   }
+  
 })

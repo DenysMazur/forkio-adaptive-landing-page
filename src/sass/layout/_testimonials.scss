@@ -1,0 +1,91 @@
+.testimonials {
+  padding: 57px 0 14px;
+  font-family: $secondary-font;
+  color: $main-text-color;
+  font-weight: $bolt-font-weight;
+  text-align: center;
+  background: url("../images/testmonials-bg 1.min.png"), linear-gradient(#4b3b4e, #4b3b4e);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include respond-to ('small-landscape') {
+    padding: 87px 0 0;
+  }
+  @include respond-to ('medium') {
+    padding: 108px 0 0;
+  }
+
+  &__title {
+    font-family: $main-font;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 53px;
+    @include respond-to ('small-landscape') {
+      font-size: 42px;
+      line-height: 44px;
+      margin-bottom: 85px;
+    }
+    @include respond-to ('medium') {
+      font-size: 48px;
+      line-height: 50px;
+      margin-bottom: 81px;
+    }
+  }
+
+  &__wrapper-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 45px;
+    padding: 0 26px;
+    margin-bottom: 37px;
+    @include respond-to ('small-landscape') {
+      padding: 0;
+      row-gap: 58px;
+      column-gap: 8%;
+      align-items: center;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 67px;
+    }
+    @include respond-to ('medium') {
+      padding: 0 6%;
+      row-gap: 116px;
+      column-gap: 5%;
+      align-items: center;
+      grid-template-columns: repeat(3, 1fr);
+      margin-bottom: 119px;
+    }
+  }
+
+  &__content {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: $secondary-font;
+    font-style: italic;
+    margin-top: 33px;
+  }
+
+  &__footer {
+    font-size: 14px;
+    line-height: 21px;
+    color: #A291A5;
+    font-weight: $regular-font-weight;
+    margin: 0 5px 22px;
+    @include respond-to ('small-landscape') {
+      margin: 0 30px 19px;
+    }
+
+    @include respond-to ('medium') {
+      margin: 0 16% 19px;
+    }
+  }
+
+  &__separator {
+    margin: 0 auto;
+    padding: 1px 0;
+    background-color: #645766;
+    width: 90%;
+    @include respond-to ('small-landscape') {
+      width: 80%;
+    }
+  }
+}
