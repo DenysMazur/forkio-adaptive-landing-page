@@ -202,7 +202,7 @@
     }
   }
 
-  &__menu-list-item {
+  &__menu-list-item {    
     @include respond-to ('small-landscape') {
       border: unset;
       padding: 0;
@@ -216,6 +216,7 @@
   }
 
   &__menu-item-link {
+    
     @include respond-to ('small-landscape') {
       &:hover {
         color: $main-text-color;

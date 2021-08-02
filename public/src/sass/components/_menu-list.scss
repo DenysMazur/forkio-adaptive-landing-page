@@ -18,7 +18,7 @@
     padding-left: 29px;
     padding-top: 10px;
     padding-bottom: 10px;
-    &:focus {
+    &--active {
       color: $theme-color;
       border-color: $theme-color;
     }
