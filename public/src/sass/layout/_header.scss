@@ -172,7 +172,7 @@
       top: 100%;
       left: 50%;
       margin-right: -50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);      
       @include respond-to ('small-landscape') {
         font-size: 21px;
         line-height: 23px;
@@ -226,5 +226,16 @@
       font-weight: $bolt-font-weight;
       color: $theme-color;
     } 
+  }
+
+  &__trial-period {
+    position: absolute;
+    top: 106%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    line-height: 14px;
+    color: $additional-text-color;    
   }
 }
