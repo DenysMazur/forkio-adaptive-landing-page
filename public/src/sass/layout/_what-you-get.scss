@@ -118,7 +118,7 @@ display: flex;
     display: none;
     @include respond-to('small-landscape') {
       margin-top: 24px;
-      display: block;
+      display: none;
       margin-left: auto;
     }
     @include respond-to('medium') {
