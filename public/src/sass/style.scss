@@ -4,6 +4,11 @@
 @import 'base/reset',
         'base/helpers';
 
+@import 'components/burger-menu-button',
+        'components/menu-list',
+        'components/main-btn',
+        'components/menu';
+
 @import 'layout/header',
         'layout/revol-editor',
         'layout/what-you-get',
@@ -11,7 +16,3 @@
         'layout/pricing';
 
 
-@import 'components/burger-menu-button',
-        'components/menu-list',
-        'components/main-btn',
-        'components/menu';
