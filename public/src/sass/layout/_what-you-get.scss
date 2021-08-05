@@ -1,14 +1,14 @@
 .what-you-get {
   @include respond-to('medium') {
     background-color: $background-what-you-get;
-display: flex;
+    display: flex;
   }
 
-  &__grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-column-gap: 85px;
-  }
+  // &__grid {
+  //   grid-template-columns: 1fr 1fr;
+  //   grid-template-rows: auto auto;
+  //   grid-column-gap: 85px;
+  // }
 
   &__title {
     font-size: 32px;
@@ -29,9 +29,9 @@ display: flex;
   }
 
   &__item {
-    display: block;
-    @include respond-to('small-landscape') {
-      display: grid;
+    display: grid;
+    grid-template-columns: 1fr;
+    @include respond-to('small-landscape') {      
       grid-template-columns: 140px 4fr;
       grid-gap: 60px 20px;
       width: 100%;
@@ -103,28 +103,33 @@ display: flex;
   &__screenshot-img-mobile {
     margin-top: 24px;
     display: block;
-    margin-left: auto;
+    width: 100%;
+    margin-left: 10px;
+
+    // margin-left: auto;
     @include respond-to('small-landscape') {
       display: none;
     }
-    @include respond-to('medium'){
-      display: none;
-    }
-
-
   }
 
   &__screenshot-img {
     display: none;
     @include respond-to('small-landscape') {
-      margin-top: 24px;
-      display: none;
-      margin-left: auto;
+      // margin-top: 24px;
+      display: block;
+      width: 100%;      
     }
     @include respond-to('medium') {
       //margin-top: 24px;
       display: block;
-      margin-left: auto;
+      margin-left: 10px;
+    }
+  }
+
+  &__container {
+    @include respond-to('medium') {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
