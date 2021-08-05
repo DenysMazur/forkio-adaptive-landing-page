@@ -2,13 +2,8 @@
   @include respond-to('medium') {
     background-color: $background-what-you-get;
     display: flex;
+    padding-top: 94px;
   }
-
-  // &__grid {
-  //   grid-template-columns: 1fr 1fr;
-  //   grid-template-rows: auto auto;
-  //   grid-column-gap: 85px;
-  // }
 
   &__title {
     font-size: 32px;
@@ -96,7 +91,6 @@
     display: none;
     @include respond-to('medium') {
       display: block;
-      //margin-top: 94px;
     }
   }
 
@@ -105,8 +99,6 @@
     display: block;
     width: 100%;
     margin-left: 10px;
-
-    // margin-left: auto;
     @include respond-to('small-landscape') {
       display: none;
     }
@@ -115,12 +107,10 @@
   &__screenshot-img {
     display: none;
     @include respond-to('small-landscape') {
-      // margin-top: 24px;
       display: block;
       width: 100%;      
     }
     @include respond-to('medium') {
-      //margin-top: 24px;
       display: block;
       margin-left: 10px;
     }
