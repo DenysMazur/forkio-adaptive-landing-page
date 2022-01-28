@@ -1,4 +1,4 @@
-    
+  Gitlab pages: https://just_infinity.gitlab.io/step-project-forkio/
 
   Project "Step-project Forkio"
   
@@ -10,5 +10,3 @@ Task №2 was done by Vitalii Bazyvoliak --(Revolutionary Editor section, Here i
 
   
 In order to fulfill this project the following tools were used:Gulp, Sass(Scss), BEM methodology.
-
-Gitlab pages: https://just_infinity.gitlab.io/step-project-forkio/
